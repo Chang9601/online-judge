@@ -1,2 +1,2 @@
 # Online-Judge
-My solutions to programming problems from various online judges
+My solutions to programming problems from online judges
