@@ -3,7 +3,6 @@
 #include <vector>
 #include <cstring>
 using namespace std;
-
 int t;
 vector<int> adj[26];
 bool vis[26];
