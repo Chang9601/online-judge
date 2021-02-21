@@ -1,6 +1,5 @@
 #include <cstdio>
 using namespace std;
-
 int t,n;
 struct Disjoint{
     int p[100001],r[100001];
