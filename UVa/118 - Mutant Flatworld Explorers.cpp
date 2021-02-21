@@ -2,6 +2,7 @@
 #include <iostream>
 #include <cstring>
 using namespace std;
+
 int x,y;
 char s[105];
 bool off[55][55];
