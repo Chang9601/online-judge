@@ -22,11 +22,7 @@ void go(int p,int m,int t,int d,int sum,int cnt)
 }
 
 int main()
-{   
-    // ios::sync_with_stdio(0);
-    // cin.tie(0);
-    //freopen("input.txt","r",stdin);
-    //freopen("output.txt","w",stdout);
+{ 
     int i; scanf("%d",&N); int a,b,c,d;
     for(i = 0; i < N; i++) scanf("%d",&A[i]);
     scanf("%d %d %d %d",&a,&b,&c,&d); 
