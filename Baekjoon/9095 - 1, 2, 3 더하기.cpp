@@ -1,25 +1,21 @@
-#include <cstdio>
+#include <iostream>
 using namespace std;
-int t,n;
-int dp[12];
 
-int main()
-{   
-    int i;
-    dp[0] = dp[1] = 1;
-    for(i = 2; i < 12; i++)
+int main() {
+    int T,n,i,j;
+    int dp[15] = {};
+    
+    dp[1] = dp[2] = dp[3] = 1;
+    for(i = 2; i <= 10 ; i++)  
+        for(j = 1; j <= 3; j++)
+            if(i-j >= 0)
+                dp[i] += dp[i-j];
+                
+    scanf("%d",&T);
+    while(T--)
     {
-        dp[i] += dp[i-1];
-        if(i-2 >= 0) dp[i] += dp[i-2];
-        if(i-3 >= 0) dp[i] += dp[i-3];
-    }
-
-    scanf("%d",&t);
-    while(t--)
-    {
-        scanf("%d",&n);;
+        scanf("%d",&n);
         printf("%d\n",dp[n]);
     }
-
     return 0;
 }
