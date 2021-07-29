@@ -41,7 +41,7 @@ int main()
             f += (s[i+1] == 'F') ? 1 : 0;
         }
 
-        if(m == f && m != 1 && f != 1)
+        if(m == f && m > 1 && f > 1)
             puts("LOOP");
         else
             puts("NO LOOP");
