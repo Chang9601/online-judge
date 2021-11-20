@@ -4,7 +4,6 @@ int main(int argc, char *argv[])
 {
 	int file_size;
 	int total_time;
-	int total_bytes;
 	double transfer_rate;
 	int remaining_bytes;
 	int remaining_time;
@@ -31,7 +30,7 @@ int main(int argc, char *argv[])
 					puts("   Time remaining: stalled");
 				else
 				{
-					remaining_time = remaining_bytes/bytes_five_secs + (remaining_bytes % bytes_five_secs != 0);
+					remaining_time = remaining_bytes / bytes_five_secs + (remaining_bytes % bytes_five_secs != 0);
 					printf("   Time remaining: %d seconds\n", remaining_time);
 				}
 				bytes_five_secs = 0;
