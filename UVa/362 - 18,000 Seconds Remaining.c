@@ -4,7 +4,6 @@ int main(int argc, char *argv[])
 {
 	int file_size;
 	int total_time;
-	double transfer_rate;
 	int remaining_bytes;
 	int remaining_time;
 	int bytes;
