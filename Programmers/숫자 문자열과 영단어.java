@@ -17,7 +17,7 @@ class Solution {
 					idx = s.indexOf(nums[j], i);
 					if(idx == i){
 						sub = nums[j];
-                        break;
+                        			break;
 					}
                 }
 				num = num*10+j;    
